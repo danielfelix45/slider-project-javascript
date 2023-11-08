@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slideshow</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div class="header"></div>
+        <nav class="nav">
+            <p>SLIDER SURF</p>
+        </nav>
+    </header>
+    <main>
         <div class="slider">
             <div class="slider--controls">
-                <div class="slider--control" onclick="goPrev()">Voltar</div>
-                <div class="slider--control" onclick="goNext()">Proxima</div>
+                <div class="slider--control" onclick="goPrev()"><i class="fa-solid fa-chevron-left fa-lg"></i></div>
+                <div class="slider--control" onclick="goNext()"><i class="fa-solid fa-chevron-right fa-lg"></i></div>
             </div>
             <div class="slider--width">
                 <div class="slider--item" style="background-image: url('images/1.jpg');">
@@ -27,10 +32,10 @@
                 </div>
             </div>
         </div>
-    </header>
-    <section>
-        <h1>Resto do site</h1>
-    </section>
+    </main>
+    <footer>
+        <p>@Daniel Felix</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
